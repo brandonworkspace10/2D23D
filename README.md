@@ -25,3 +25,4 @@ pnpm dev
 - All pipeline stages are mocked with a simulated state machine.
 - No backend API connections are configured yet.
 # 2D23D
+# 2D23D
