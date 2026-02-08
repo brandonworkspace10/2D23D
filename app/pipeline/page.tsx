@@ -173,8 +173,8 @@ const baseEdges = [
 ];
 
 export default function PipelinePage() {
-  const [nodes, setNodes, onNodesChange] = useNodesState(baseNodes);
-  const [edges, _setEdges, onEdgesChange] = useEdgesState(baseEdges);
+  const [nodes, setNodes, onNodesChange] = useNodesState(baseNodes as any);
+  const [edges, _setEdges, onEdgesChange] = useEdgesState(baseEdges as any);
   const [currentStage, setCurrentStage] = useState(0);
   const [progress, setProgress] = useState(0);
   const [isRunning, setIsRunning] = useState(true);
