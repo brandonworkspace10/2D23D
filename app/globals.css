@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-canvas text-slate-100 min-h-screen;
+}
+
+.bg-dot-grid {
+  background-color: #0b0f14;
+  background-image:
+    radial-gradient(rgba(148, 163, 184, 0.28) 1px, transparent 1px),
+    radial-gradient(rgba(34, 211, 238, 0.12) 1px, transparent 1px);
+  background-size: 26px 26px, 10px 10px;
+  background-position: 0 0, 8px 8px;
+}
+
+.canvas-glow {
+  background-image: radial-gradient(circle at top left, rgba(96, 165, 250, 0.18), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(34, 211, 238, 0.12), transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(14, 116, 144, 0.18), transparent 55%);
+}
+
+.react-flow__node {
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui;
+}
+
+.react-flow__edge-path {
+  stroke: rgba(148, 163, 184, 0.6);
+  stroke-width: 1.5;
+}
+
+.react-flow__connectionline {
+  stroke: rgba(96, 165, 250, 0.8);
+}
+
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  background: #0b0f14;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+}
+
+.react-flow__controls button {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.react-flow__minimap {
+  background: rgba(2, 6, 23, 0.8) !important;
+}
